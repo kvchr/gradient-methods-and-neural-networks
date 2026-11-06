@@ -1,0 +1,13 @@
+Gradient descent from (1, 1), tolerance 1e-06:
+  alpha = 0.01: converges after 475 iterations, last point (0.2500, 0.7500), f = 0.1875
+  alpha = 0.05: converges after 107 iterations, last point (0.2500, 0.7500), f = 0.1875
+  alpha = 0.10: converges after 55 iterations, last point (0.2500, 0.7500), f = 0.1875
+  alpha = 0.20: converges after 26 iterations, last point (0.2500, 0.7500), f = 0.1875
+  alpha = 0.30: no convergence in 5000 iterations, it alternates between (0.1710, 0.8290) and (0.4102, 0.5898)
+  alpha = 0.40: diverges, |x| > 1e6 after 6 iterations
+Hessian at the minimum: eigenvalues 2 and 8, so gradient descent is stable near x* only for alpha < 2/8 = 0.25
+  alpha = 0.01: error shrinks by a factor max|1 - alpha*lambda| = 0.98 per iteration
+  alpha = 0.05: error shrinks by a factor max|1 - alpha*lambda| = 0.90 per iteration
+  alpha = 0.10: error shrinks by a factor max|1 - alpha*lambda| = 0.80 per iteration
+  alpha = 0.20: error shrinks by a factor max|1 - alpha*lambda| = 0.60 per iteration
+Newton: converges after 7 iterations, last point (0.2500, 0.7500), f = 0.1875

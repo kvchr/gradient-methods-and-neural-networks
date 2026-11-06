@@ -1,0 +1,14 @@
+Minimum: x* = (0.5450, 0.4502), f* = 0.9953
+  value of piece 3 there: -0.8957 (below f*, so not active)
+  lambda = (0.4787, 0.0474, 0.4739), all positive, so 0 is in the subdifferential
+  gradient lengths of the pieces: [1.41 1.42 1.44 1.42] (never zero)
+
+2000 iterations from (0, 0):
+  alpha = 0.5    best f = 1.00000 (f - f* = 4.7e-03), last point (0.1500, 0.3500), last 200 points within 0.9463 of x*
+  alpha = 0.1    best f = 1.00000 (f - f* = 4.7e-03), last point (0.4500, 0.4500), last 200 points within 0.1853 of x*
+  alpha = 0.01   best f = 0.99600 (f - f* = 7.4e-04), last point (0.5470, 0.4590), last 200 points within 0.0189 of x*
+  alpha_k = 1/k  best f = 0.99531 (f - f* = 4.7e-05), last point (0.5454, 0.4502), last 200 points within 0.0010 of x*
+
+With the stopping rule |x_{k+1} - x_k| < 1e-3:
+  fixed steps never stop, because the step is alpha * |g| >= 1.414 * alpha
+  alpha_k = 1/k stops as soon as |g|/k < 1e-3, i.e. after about 1415 iterations, wherever the point is

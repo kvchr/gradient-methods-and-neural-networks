@@ -1,0 +1,55 @@
+{
+  "chosen": {
+    "study": "neurons",
+    "setting": "256 neurons",
+    "lr": 0.001,
+    "hidden_layers": 1,
+    "neurons": 256,
+    "val_acc_mean": 0.8905
+  },
+  "test_acc": [
+    0.8809,
+    0.8811,
+    0.8809
+  ],
+  "test_acc_mean": 0.8809666666666667,
+  "test_acc_std": 0.00011547005383791244,
+  "per_class_test_acc": {
+    "T-shirt/top": 0.8339999914169312,
+    "Trouser": 0.9580000042915344,
+    "Pullover": 0.8080000281333923,
+    "Dress": 0.8870000243186951,
+    "Coat": 0.6990000009536743,
+    "Sandal": 0.9649999737739563,
+    "Shirt": 0.7599999904632568,
+    "Sneaker": 0.9750000238418579,
+    "Bag": 0.9779999852180481,
+    "Ankle boot": 0.9449999928474426
+  },
+  "best_lr_per_optimizer": {
+    "SGD": {
+      "lr": 0.1,
+      "val_acc_mean": 0.8810555555555556
+    },
+    "SGD + momentum": {
+      "lr": 0.01,
+      "val_acc_mean": 0.8845000000000001
+    },
+    "Nesterov": {
+      "lr": 0.01,
+      "val_acc_mean": 0.8845000000000001
+    },
+    "Adagrad": {
+      "lr": 0.1,
+      "val_acc_mean": 0.8821666666666667
+    },
+    "RMSprop": {
+      "lr": 0.001,
+      "val_acc_mean": 0.8855555555555555
+    },
+    "Adam": {
+      "lr": 0.001,
+      "val_acc_mean": 0.8885555555555555
+    }
+  }
+}

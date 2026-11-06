@@ -1,0 +1,4 @@
+(A) 4 ReLU neurons, weights set by hand: max |error| on [-3, 3] = 0.00e+00
+(B) 120 ReLU neurons, traingd: stopped after 1200 epochs (Training finished: Reached maximum number of epochs)
+    max |error| = 0.0735, mean |error| = 0.0119 on 1001 test points in [-3, 3]
+    error at the kinks x = -2, -1, 0: [0.073 -0.071 0.0735]; mean |error| elsewhere (|x - kink| > 0.1): 0.0083

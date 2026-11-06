@@ -1,0 +1,14 @@
+# Fashion-MNIST is downloaded by the script; it is not part of this repository
+python/data/
+
+# Python and MATLAB working files
+__pycache__/
+*.pyc
+*.asv
+*.m~
+*.mat
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
