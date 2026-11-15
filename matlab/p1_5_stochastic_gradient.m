@@ -105,5 +105,6 @@ end
 plot(a, b, 'ks', 'MarkerFaceColor', [0.6 0.6 0.6], 'DisplayName', 'points (a_i, b_i)');
 plot(x_star(1), x_star(2), 'kp', 'MarkerSize', 13, 'MarkerFaceColor', 'k', 'DisplayName', 'minimum');
 axis equal; xlim([-1 11]); ylim([-1 11]);
-xlabel('x_1'); ylabel('x_2'); title('One SGD run from (9, 9), 400 iterations'); legend('Location', 'southeast');
+xlabel('x_1'); ylabel('x_2'); title('One SGD run from (9, 9), 400 iterations'); legend('Location', 'northwest');
+set(findall(fig, 'Type', 'axes'), 'Toolbar', []);   % keep the axes toolbar out of the image
 exportgraphics(fig, fullfile(figdir, 'p1_5_sgd.png'), 'Resolution', 200);

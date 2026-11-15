@@ -80,7 +80,7 @@ The Hessian of f is diag(2A, 2/A), so its condition number is κ = max(A², 1/A�
 | Gradient descent, iterations | 1307 | 156 | 360 | 854 | 1631 |
 | Momentum, iterations | 286 | 283 | 310 | 308 | 316 |
 
-The report has all 13 values of A. For gradient descent, the number of iterations grows in proportion to √κ. The flattest direction of the valley has curvature 2/√κ, and with a fixed step each iteration shrinks the error in that direction only by a factor 1 - 0.1/√κ. The momentum method needs about 280-325 iterations whatever κ is. With β = 0.9, its error shrinks by a factor √β = 0.949 per iteration in both directions, as long as α times each curvature lies between (1 - √β)² and (1 + √β)². That holds for every A tested, so κ does not matter. Momentum is slower than gradient descent only when the valley is nearly round (κ below about 4).
+The report has all 13 values of A. For gradient descent, the number of iterations grows roughly in proportion to √κ. The flattest direction of the valley has curvature 2/√κ, and with a fixed step each iteration shrinks the error in that direction only by a factor 1 - 0.1/√κ. The momentum method needs about 280-325 iterations whatever κ is. With β = 0.9, its error shrinks by a factor √β = 0.949 per iteration in both directions, as long as α times each curvature lies between (1 - √β)² and (1 + √β)². That holds for every A tested, so κ does not matter. Momentum is slower than gradient descent only when the valley is nearly round (κ below about 4).
 
 ![Iterations against the condition number for gradient descent and momentum](figures/p1_2_iterations_vs_kappa.png)
 
